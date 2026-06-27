@@ -95,7 +95,7 @@ draw_block:
         cmp bp, BLOCK_COUNT_Y
         jl draw_row
 
-    movzx cx, [paddle_x]
+    movzx cx, byte [paddle_x]
 
 erase_ball:
     mov di, word [ball_x]
